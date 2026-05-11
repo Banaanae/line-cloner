@@ -4,4 +4,4 @@ Clones lines specified distance below, to speed up repeative tasks
 
 ## Features
 
-TODO animation
+https://github.com/user-attachments/assets/769a5ed4-1563-4f4c-b7a1-77e4bca10d9d
