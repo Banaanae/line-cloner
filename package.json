@@ -1,0 +1,107 @@
+{
+  "name": "line-cloner",
+  "displayName": "line-cloner",
+  "description": "Clone selected line N lines below",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Banaanae/line-cloner.git"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "line-cloner.cloneLineBelow",
+        "title": "Clone line below"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+k 1",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 1,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 2",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 2,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 3",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 3,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 4",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 4,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 5",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 5,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 6",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 6,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 7",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 7,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 8",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 8,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 9",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 9,
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k 0",
+        "command": "line-cloner.cloneLineBelow",
+        "args": 0,
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/vscode": "^1.60.0",
+    "esbuild": "^0.27.3",
+    "eslint": "^9.39.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  }
+}
